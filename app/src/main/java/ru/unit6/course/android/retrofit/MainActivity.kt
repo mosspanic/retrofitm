@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.container, MainFragment.newInstance())
                 .commitNow()
 
-            val un: TextView
+           /* val un: TextView
             try {
                 println("########## un наполнение")
                 un = MainAdapter.DataViewHolder.
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
             } catch (e: Exception) {
                 println("##########         Exception findById")
-            }
+            }*/
         }
         //recyclerView.adapter.getItemCount()
 

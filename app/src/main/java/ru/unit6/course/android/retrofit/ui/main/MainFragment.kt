@@ -81,7 +81,7 @@ class MainFragment : Fragment() {
                 Status.LOADING -> {
                     progressBar.visibility = View.VISIBLE
                     recyclerView.visibility = View.GONE
-                    println("######### Observers LOADINGg")
+                    println("######### Observers LOADINGg:")
                 }
             }
         }

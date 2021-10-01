@@ -40,7 +40,9 @@ class MainAdapter(private val users: ArrayList<User>) : RecyclerView.Adapter<Mai
 
     //##########################################
     interface OnUserClickListener {
-       fun onUserClick(users: ArrayList<User>, position: Int)
+        fun onUserClick(users: ArrayList<User>, position: Int){
+           println("####### onUserClick")
+       }
     }
     //private fun onClickListener= OnUserClickListener.onUserClick()
 
@@ -49,9 +51,9 @@ class MainAdapter(private val users: ArrayList<User>) : RecyclerView.Adapter<Mai
 
         // обработка нажатия
         // обработка нажатия
-        holder.itemView.setOnClickListener { // вызываем метод слушателя, передавая ему данные
-            OnUserClickListener.onUserClick(users, position)
-        }
+        //holder.itemView.setOnClickListener { // вызываем метод слушателя, передавая ему данные
+          //  OnUserClickListener.onUserClick(users, position)
+        //}
     }
 
 
